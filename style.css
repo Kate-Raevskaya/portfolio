@@ -1,0 +1,379 @@
+* {margin: 0; padding: 0;}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #341010;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-menu {
+    display: flex;
+}
+
+nav a {
+    padding: 12px 10px;
+    text-decoration: none;
+    color: #cbcbcb;
+    font-family: Candara, serif;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+nav a:hover {
+    background-color: #cbcbcb;
+    color: #341010;
+}
+
+header {
+    background-image: url("images/bg.jpg");
+    background-position: center top;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-family: Candara, serif;
+    font-size: 40px;
+    color: #cbcbcb;
+    position: absolute;
+    bottom: 50px;
+    left: 10%;
+}
+
+h2 {
+    font-family: Candara, serif;
+    color: #341010;
+}
+
+p {
+    font-family: Candara, serif;
+    color: #341010;
+    font-size: 25px;
+}
+
+section {
+    scroll-margin-top: 54px;
+    background-color: #cbcbcb;
+}
+
+#about {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#my-photo {
+    margin-bottom: 150px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#my-photo img:first-child {
+    z-index: 1;
+    top: 100px;
+    left: 350px;
+    width: 330px;
+    position: absolute;
+
+}
+
+#my-photo img:last-child {
+    width: auto;
+    height: 100%;
+}
+
+#description {
+    margin-bottom: 100px;
+}
+
+#description h2 {
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+#aboutMe {
+    padding-top: 50px;
+    width: 80%;
+}
+
+#skills {
+    font-weight: bold;
+}
+
+#all-skills {
+    padding-top: 20px;
+}
+
+#portfolio {
+    position: relative;
+    min-height: 100vh;
+}
+
+#portfolio h2 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+#projects {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.project-card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 600px;
+    padding-bottom: 20px;
+    transition: width 300ms linear;
+}
+
+.project-card:hover {
+    cursor: pointer;
+    width: 650px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#contacts {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#contacts h2 {
+    padding-bottom: 20px;
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#contacts p {
+    text-align: center;
+}
+
+#social {
+    padding-top: 30px;
+    padding-bottom: 300px;
+    display: flex;
+    gap: 30px;
+}
+
+#social img {
+    width: 50px;
+}
+
+footer {
+    background-color: #341010;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    color: #cbcbcb;
+    font-family: Candara, serif;
+    font-weight: lighter;
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.window {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    min-height: 450px;
+    background-color: white;
+    border-radius: 6px;
+    border: solid 5px #341010;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.window p {
+    text-align: center;
+}
+
+.window button {
+    cursor: pointer;
+    background-color: #341010;
+    color: #cbcbcb;
+    font-family: Candara, serif;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+    left: 0;
+}
+
+
+.open-pop-up-window {
+    visibility: visible;
+}
+
+
+.column-large-2 {
+    width: 50%;
+}
+
+#open-menu {
+    display: none;
+    width: 40px;
+    height: 40px;
+    align-self: flex-end;
+    font-size: 20px;
+    margin: 5px;
+    background-color: #cbcbcb;
+    border-radius: 4px;
+    border: transparent;
+}
+
+#open-menu:hover {
+    background-color: #b2b2b2;
+    cursor: pointer;
+}
+
+.btn-open::before {
+    content: '\2630';
+}
+
+.btn-close::before {
+    content: '\2716';
+}
+
+
+@media (max-width: 600px) {
+
+    #open-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-menu {
+        display: none;
+    }
+
+    .small-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-menu-small {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 7px 0;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        gap: 20px;
+        min-height: 0;
+    }
+
+    #description {
+        margin-bottom: 0;
+    }
+
+    #description p {
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+
+    #description h2 {
+        padding-left: 30px;
+    }
+
+    #my-photo {
+        height: 200px;
+    }
+    .column-small-1 {
+        width: 100%;
+    }
+
+    #my-photo img:first-child {
+        top: 80px;
+        left: 100px;
+        width: 200px;
+    }
+
+    #portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects {
+        flex-direction: column;
+        width: 80%;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+        transition: none;
+    }
+
+    .project-card:hover {
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    .window {
+        width: 90%;
+        min-height: 50%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}

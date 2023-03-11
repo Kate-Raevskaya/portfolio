@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="open-menu" class="btn-open hamburger"></div>
+        <div class="main-menu">
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contacts">Contacts</a>
+            <a href="#home">Home</a>
+        </div>
+    </nav>
+    <header id="home">
+        <h1>Kate Raevskaia, <br>
+            Front-end developer</h1>
+    </header>
+    <div class="container">
+        <section id="about">
+            <div id="my-photo" class="column-large-2 column-small-1">
+                <img src="images/MyPhoto.jpg" alt="My face">
+                <img src="images/image.jpg" alt="image">
+            </div>
+            <div id="description" class="column-large-2 column-small-1">
+                <h2>About me</h2>
+                <p id="aboutMe">Hi, I'm Kate Raevskaia. I've been a junior front-end developer for 5 months now.
+                    For me, programming not just a job, it's a hobby.
+                    I'm open to new knowledge, I like to study new technologies and apply them in practice.</p>
+                <p id="all-skills"><span id="skills">Skills:</span> HTML, CSS, JS, React.</p>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div id="projects">
+                <div id="flashcards" class="project-card open-window">
+                    <img src="images/Flashcards.png" alt="Flashcards">
+                    <p id="name-flashcards">Flashcards</p>
+                </div>
+                <div id="virtual-piano" class="project-card open-window">
+                    <img src="images/VirtualPiano.png" alt="Virtual piano">
+                    <p id="name-virtual-piano">Virtual Piano</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <p>You can contact me at <a href="mailto:raevskayakatay1707@gmail.com">raevskayakatay1707@gmail.com</a></p>
+            <div id="social">
+                <a href="https://github.com/Kate-Raevskaya"><img src="images/github.svg"></a>
+                <a href="https://www.instagram.com/kate_raevskaya/"><img src="images/instagram.svg"></a>
+            </div>
+        </section>
+    </div>
+    <div class="overlay">
+        <div id="about-flashcards" class="window">
+            <h2>Flashcards</h2>
+            <p>You can see the project at the following link:
+                <a href="https://github.com/Kate-Raevskaya/flashcards">flashcards</a>.</p>
+            <p>I did this project when I was studying the fronted on HyperSkill.
+                I created a web page with flip-down flash cards, learned some HTML
+                basics and learned that CSS can easily make a beautiful design.</p>
+            <button class="close">Close</button>
+        </div>
+        <div id="about-virtual-piano" class="window">
+            <h2>Virtual Piano</h2>
+            <p>You can see the project at the following link:
+                <a href="https://github.com/Kate-Raevskaya/virtual-piano">virtual piano</a>.</p>
+            <p>I did this project when I was studying the fronted on HyperSkill.
+                I bound the functionality of a web application to the keys on the keyboard and
+                designed of the web page that looks like real piano using CSS.</p>
+            <button class="close">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Kate Raevskaia, 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

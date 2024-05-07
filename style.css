@@ -103,7 +103,7 @@ section {
 }
 
 #aboutMe {
-    padding-top: 50px;
+    padding-top: 10px;
     width: 80%;
 }
 
@@ -112,12 +112,28 @@ section {
 }
 
 #all-skills {
-    padding-top: 20px;
+    padding: 20px 0;
+    width: 90%;
+}
+
+#more-about-me {
+    display: inline;
+    cursor: pointer;
+    background-color: #341010;
+    color: #cbcbcb;
+    font-family: Candara, serif;
+    font-size: 20px;
+    padding: 5px 10px;
+
 }
 
 #portfolio {
     position: relative;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
 }
 
 #portfolio h2 {
@@ -129,23 +145,31 @@ section {
 
 #projects {
     margin-top: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*gap: 60px;*/
+
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: 400px;*/
+    gap: 50px;
 }
 
 .project-card {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 600px;
+    /*width: 600px;*/
+    width: 80%;
     padding-bottom: 20px;
-    transition: width 300ms linear;
+    transition: width 400ms linear;
 }
 
 .project-card:hover {
     cursor: pointer;
-    width: 650px;
+    /*width: 650px;*/
+    width: 100%;
 }
 
 .project-card img {
@@ -216,8 +240,53 @@ footer p {
     min-height: 450px;
     background-color: white;
     border-radius: 6px;
-    border: solid 5px #341010;
+    border: solid 3px #341010;
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+#about-more-about-me {
+    align-items: flex-start;
+
+}
+
+#about-more-about-me h3 {
+    color: rgba(52, 16, 16, 0.84);
+    font-family: Candara, serif;
+    padding-left: 40px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+#about-more-about-me p {
+    text-align: left;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+#about-more-about-me a {
+    color: #341010;
+    font-family: Candara, serif;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+#about-more-about-me ul {
+    padding-left: 35px;
+    font-family: Candara, serif;
+    color: #341010;
+    font-size: 18px;
+}
+
+#about-more-about-me .close {
+    align-self: center;
+    margin-top: 5px;
+}
+
+#about-more-about-me div {
+    width: 95%;
+    height: 1px;
+    background-color: rgba(52, 16, 16, 0.46);
+    margin-left: 10px;
 }
 
 .window p {
@@ -326,6 +395,10 @@ footer p {
     #description p {
         padding-left: 20px;
         padding-top: 5px;
+    }
+
+    #description #more-about-me {
+        margin-left: 20px;
     }
 
     #description h2 {

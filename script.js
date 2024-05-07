@@ -1,6 +1,8 @@
 let projects = document.querySelectorAll('.project-card');
 
-function openPopUpWindow(project) {
+let aboutMeButton = document.getElementById('more-about-me');
+
+function addPopUpListener(project) {
     let projectId = project.id;
     let popUpWindow = document.getElementById(`about-${projectId}`);
     let closeButton = popUpWindow.querySelector("button.close");
@@ -17,14 +19,18 @@ function openPopUpWindow(project) {
 document.querySelector(".overlay").addEventListener("click", () => {
     let openPopupNodes = document.querySelectorAll(".open-pop-up-window");
     for (let node of openPopupNodes) {
+
         node.classList.remove("open-pop-up-window")
     }
 })
 
 
 for (let project of projects) {
-    openPopUpWindow(project);
+    addPopUpListener(project);
 }
+
+addPopUpListener(aboutMeButton)
+
 
 let navBar = document.getElementById("nav-bar");
 let mainMenu = navBar.querySelector(".main-menu");

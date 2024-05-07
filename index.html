@@ -18,7 +18,7 @@
     </nav>
     <header id="home">
         <h1>Kate Raevskaia, <br>
-            Front-end developer</h1>
+            Frontend developer</h1>
     </header>
     <div class="container">
         <section id="about">
@@ -28,10 +28,22 @@
             </div>
             <div id="description" class="column-large-2 column-small-1">
                 <h2>About me</h2>
-                <p id="aboutMe">Hi, I'm Kate Raevskaia. I've been a junior front-end developer for 5 months now.
-                    For me, programming not just a job, it's a hobby.
-                    I'm open to new knowledge, I like to study new technologies and apply them in practice.</p>
-                <p id="all-skills"><span id="skills">Skills:</span> HTML, CSS, JS, React.</p>
+                <p id="aboutMe">Привет! Меня зовут Катя.
+                    <br/>
+                    Я хочу развиваться как фронтенд разработчик
+                    и работать над интересными проектами в команде. Умею
+                    организовывать свою работу и рабочее время. Очень люблю учиться и решать интересные задачи.
+                    <br/>
+                    <br/>
+                    Сейчас работаю над реализацией
+                    собственных проектов, расширяя применяемый мною стек технологий.
+                    Имею опыт работы с React, Figma, Bootstrap и SPA приложениями. Могу разбирать и
+                    анализировать чужой код. Читаю документацию на английском языке.
+                </p>
+                <p id="all-skills"><span id="skills">Skills:</span> JavaScript, Git, HTML5, CSS3, React, TypeScript,
+                    Bootstrap, SPA,
+                    Английский язык, Figma, React Router, JSON API, Redux.</p>
+                <div id="more-about-me">Узнать больше</div>
             </div>
         </section>
         <section id="portfolio">
@@ -45,18 +57,78 @@
                     <img src="images/VirtualPiano.png" alt="Virtual piano">
                     <p id="name-virtual-piano">Virtual Piano</p>
                 </div>
+<!--                <div id="3" class="project-card open-window">-->
+<!--                    <img src="images/Flashcards.png" alt="Flashcards">-->
+<!--                    <p id="name-3">Flashcards</p>-->
+<!--                </div>-->
+<!--                <div id="4" class="project-card open-window">-->
+<!--                    <img src="images/VirtualPiano.png" alt="Virtual piano">-->
+<!--                    <p id="name-4">Virtual Piano</p>-->
+<!--                </div>-->
+<!--                <div id="5" class="project-card open-window">-->
+<!--                    <img src="images/Flashcards.png" alt="Flashcards">-->
+<!--                    <p id="name-5">Flashcards</p>-->
+<!--                </div>-->
+<!--                <div id="6" class="project-card open-window">-->
+<!--                    <img src="images/VirtualPiano.png" alt="Virtual piano">-->
+<!--                    <p id="name-6">Virtual Piano</p>-->
+<!--                </div>-->
+<!--                <div id="7" class="project-card open-window">-->
+<!--                    <img src="images/Flashcards.png" alt="Flashcards">-->
+<!--                    <p id="name-7">Flashcards</p>-->
+<!--                </div>-->
+<!--                <div id="8" class="project-card open-window">-->
+<!--                    <img src="images/VirtualPiano.png" alt="Virtual piano">-->
+<!--                    <p id="name-8">Virtual Piano</p>-->
+<!--                </div>-->
             </div>
         </section>
         <section id="contacts">
             <h2>Contacts</h2>
-            <p>You can contact me at <a href="mailto:raevskayakatay1707@gmail.com">raevskayakatay1707@gmail.com</a></p>
+            <p>My email <a href="mailto:raevskayakatay1707@gmail.com">raevskayakatay1707@gmail.com</a></p>
             <div id="social">
                 <a href="https://github.com/Kate-Raevskaya"><img src="images/github.svg"></a>
                 <a href="https://www.instagram.com/kate_raevskaya/"><img src="images/instagram.svg"></a>
+                <a href="https://t.me/KateRa1707"><img src="images/icons8-telegram.svg"></a>
+
             </div>
         </section>
     </div>
     <div class="overlay">
+        <div id="about-more-about-me" class="window about-me">
+            <h3>О себе</h3>
+            <div></div>
+            <p>Мне 25 лет. Живу в Санкт-Петербурге. Люблю собак, цветы и путешествия. Увлекаюсь фотографией и
+                настольными играми.Изучаю английский и французский языки.</p>
+            <h3>Образование</h3>
+            <div></div>
+            <p>
+                В 2016 году закончила школу с золотой медалью.
+                <br/>
+                В 2020 году закончила факультет математики с красным дипломом в РГПУ им.А.И.Герцена
+            </p>
+            <h3>Курсы</h3>
+            <div></div>
+            <p>
+                Закончила два онлайн курса в JetBrains Academy - Hyperskill:
+            </p>
+                <a href="https://hyperskill.org/certificates/ccdd8be2-5574-4f22-8ea5-6a78ce3188cd.pdf" target="_blank">Introduction to JavaScript</a>
+                <a href="https://hyperskill.org/certificates/dcf381e9-7241-47cc-bebb-3727eb890328.pdf" target="_blank"> Frontend Core</a>
+            <br>
+            <h3>
+                В текущем проекте работаю над реализацией следующих задач:
+            </h3>
+            <div></div>
+            <ul>
+                <li>создание пользовательских компонентов React</li>
+                <li>организация маршрутизации на стороне клиента с React Router</li>
+                <li>реализация аутентификации пользователей</li>
+                <li>взаимодействие с внешним API</li>
+                <li>адаптивная верстка веб-приложения</li>
+                <li>стилизация и дизайн компонентов и приложения</li>
+            </ul>
+            <button class="close">Close</button>
+        </div>
         <div id="about-flashcards" class="window">
             <h2>Flashcards</h2>
             <p>You can see the project at the following link:
@@ -78,7 +150,7 @@
     </div>
 
     <footer>
-        <p>Kate Raevskaia, 2023</p>
+        <p>Kate Raevskaia, 2024</p>
     </footer>
     <script src="script.js"></script>
 </body>

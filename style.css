@@ -107,6 +107,11 @@ section {
     width: 80%;
 }
 
+#aboutMe p {
+    text-indent: 20px;
+    padding-bottom: 15px;
+}
+
 #skills {
     font-weight: bold;
 }
@@ -144,42 +149,66 @@ section {
 }
 
 #projects {
-    margin-top: 70px;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*gap: 60px;*/
-
-    display: grid;
-    width: 80%;
-    grid-template-columns: 1fr 1fr;
-    /*grid-template-rows: 400px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 50px;
 }
 
 .project-card {
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /*width: 600px;*/
-    width: 80%;
-    padding-bottom: 20px;
-    transition: width 400ms linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 70px 0 70px;
 }
 
-.project-card:hover {
-    cursor: pointer;
-    /*width: 650px;*/
-    width: 100%;
+.project-description {
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
-.project-card img {
-    width: 100%;
-    height: auto;
+.project-description.right {
+    flex-direction: row-reverse;
+}
+
+.project-card h3 {
+    align-self: flex-start;
+    color: rgb(95, 131, 197);
+    font-family: Candara, serif;
+    padding-left: 150px;
+    font-size: 40px;
+}
+
+.project-card h3:after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #341010;
+    width: 1000px;
+}
+
+.project-card a {
+    color: aliceblue;
+    background-color: rgb(95, 131, 197);
+    text-decoration: none;
+    font-family: Candara, serif;
+    font-size: 25px;
+    padding: 3px 7px;
 }
 
 .project-card p {
-    padding-top: 10px;
-    text-align: center;
+    padding-bottom: 15px;
+    text-indent: 20px;
+}
+
+.about-project {
+    padding: 15px 25px 15px 0;
+}
+
+video {
+    width: 720px;
+    height: auto;
 }
 
 #contacts {
@@ -425,20 +454,37 @@ footer p {
     }
 
     #projects {
-        flex-direction: column;
-        width: 80%;
-        margin-top: 20px;
         gap: 20px;
     }
 
     .project-card {
-        width: 100%;
-        transition: none;
+        padding: 50px 20px 0 20px;
     }
 
-    .project-card:hover {
+    .project-card h3 {
+        padding-left: 0;
+    }
+
+    .project-card h3:after {
+        width: 150%;
+    }
+
+    .project-description, .project-description.right {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-card a {
+        font-size: 20px;
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+    video {
         width: 100%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+        height: auto;
     }
 
     .window {

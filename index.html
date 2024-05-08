@@ -28,18 +28,16 @@
             </div>
             <div id="description" class="column-large-2 column-small-1">
                 <h2>About me</h2>
-                <p id="aboutMe">Привет! Меня зовут Катя.
-                    <br/>
-                    Я хочу развиваться как фронтенд разработчик
-                    и работать над интересными проектами в команде. Умею
-                    организовывать свою работу и рабочее время. Очень люблю учиться и решать интересные задачи.
-                    <br/>
-                    <br/>
-                    Сейчас работаю над реализацией
-                    собственных проектов, расширяя применяемый мною стек технологий.
-                    Имею опыт работы с React, Figma, Bootstrap и SPA приложениями. Могу разбирать и
-                    анализировать чужой код. Читаю документацию на английском языке.
-                </p>
+                <div id="aboutMe">
+                    <p>Привет! Меня зовут Катя.</p>
+                    <p>Я хочу развиваться как фронтенд разработчик
+                        и работать над интересными проектами в команде. Умею
+                        организовывать свою работу и рабочее время. Очень люблю учиться и решать интересные задачи.</p>
+                    <p>Сейчас работаю над реализацией
+                        собственных проектов, расширяя применяемый мною стек технологий.
+                        Имею опыт работы с React, Redux, Figma, внешними API, SPA приложениями. Могу разбирать и
+                        анализировать чужой код. Читаю документацию на английском языке.</p>
+                </div>
                 <p id="all-skills"><span id="skills">Skills:</span> JavaScript, Git, HTML5, CSS3, React, TypeScript,
                     Bootstrap, SPA,
                     Английский язык, Figma, React Router, JSON API, Redux.</p>
@@ -49,43 +47,61 @@
         <section id="portfolio">
             <h2>Portfolio</h2>
             <div id="projects">
-                <div id="flashcards" class="project-card open-window">
-                    <img src="images/Flashcards.png" alt="Flashcards">
-                    <p id="name-flashcards">Flashcards</p>
+                <div id="dog-glossary" class="project-card">
+                    <h3 class="project-name">Dog Glossary</h3>
+                    <div class="project-description left">
+                        <div class="about-project">
+                            <p>Смотреть на милых собакчек в Интернете - что может быть лучше!</p>
+                            <p>Проект представляет собой страницу для отображения случайных фото собак,
+                                фото конкретной породы и списка всех пород, используя общедоступный API.
+                                В приложении также есть возможность сохранять понравившиеся изображения в свой аккаунт.</p>
+                            <p>В проекте реализовано взаимодействие с внешним API, аутентификация пользователей, адаптивная
+                                верстка приложения. Использованы в том числе React, React Router и  SCSS.</p>
+                            <a href="https://github.com/Kate-Raevskaya/Dog-Glossary-React.git">Посмотреть на GitHub</a>
+                        </div>
+                        <div class="project-video">
+                            <video controls src="videos/dog-glossary.mp4"></video>
+                        </div>
+                    </div>
                 </div>
-                <div id="virtual-piano" class="project-card open-window">
-                    <img src="images/VirtualPiano.png" alt="Virtual piano">
-                    <p id="name-virtual-piano">Virtual Piano</p>
+                <div id="coffee-shop" class="project-card">
+                    <h3 class="project-name">Coffee Shop</h3>
+                    <div class="project-description right">
+                        <div class="about-project">
+                            <p>В этом проекте реализована страница для отображения случайых фото собак,
+                                фото конкретной породы и списка всех пород, используя общедоступный API.
+                                В приложении также есть возможность сохранять понравившиеся изображения в свой аккаунт.</p>
+                            <p>В проекте реализовано взаимодействие с внешним API, аутентификация пользователей, адаптивная
+                                верстка приложения. Использованы React, React Router и  SCSS.</p>
+                            <a href="https://github.com/Kate-Raevskaya/hyperskill-cafe.git">Посмотреть на GitHub</a>
+                        </div>
+                        <div class="project-video">
+                            <video controls src="videos/coffee-shop.mp4"></video>
+                        </div>
+                    </div>
                 </div>
-<!--                <div id="3" class="project-card open-window">-->
-<!--                    <img src="images/Flashcards.png" alt="Flashcards">-->
-<!--                    <p id="name-3">Flashcards</p>-->
-<!--                </div>-->
-<!--                <div id="4" class="project-card open-window">-->
-<!--                    <img src="images/VirtualPiano.png" alt="Virtual piano">-->
-<!--                    <p id="name-4">Virtual Piano</p>-->
-<!--                </div>-->
-<!--                <div id="5" class="project-card open-window">-->
-<!--                    <img src="images/Flashcards.png" alt="Flashcards">-->
-<!--                    <p id="name-5">Flashcards</p>-->
-<!--                </div>-->
-<!--                <div id="6" class="project-card open-window">-->
-<!--                    <img src="images/VirtualPiano.png" alt="Virtual piano">-->
-<!--                    <p id="name-6">Virtual Piano</p>-->
-<!--                </div>-->
-<!--                <div id="7" class="project-card open-window">-->
-<!--                    <img src="images/Flashcards.png" alt="Flashcards">-->
-<!--                    <p id="name-7">Flashcards</p>-->
-<!--                </div>-->
-<!--                <div id="8" class="project-card open-window">-->
-<!--                    <img src="images/VirtualPiano.png" alt="Virtual piano">-->
-<!--                    <p id="name-8">Virtual Piano</p>-->
-<!--                </div>-->
+                <div id="photo-editor" class="project-card">
+                    <h3 class="project-name">Photo Editor</h3>
+                    <div class="project-description left">
+                        <div class="about-project">
+                            <p>Смотреть на милых собакчек в Интернете - что может быть лучше!</p>
+                            <p>Проект представляет собой страницу для отображения случайных фото собак,
+                                фото конкретной породы и списка всех пород, используя общедоступный API.
+                                В приложении также есть возможность сохранять понравившиеся изображения в свой аккаунт.</p>
+                            <p>В проекте реализовано взаимодействие с внешним API, аутентификация пользователей, адаптивная
+                                верстка приложения. Использованы в том числе React, React Router и  SCSS.</p>
+                            <a href="https://github.com/Kate-Raevskaya/hypergram.git">Посмотреть на GitHub</a>
+                        </div>
+                        <div class="project-video">
+                            <video controls src="videos/photo-editor.mp4"></video>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="contacts">
             <h2>Contacts</h2>
-            <p>My email <a href="mailto:raevskayakatay1707@gmail.com">raevskayakatay1707@gmail.com</a></p>
+            <p><a href="mailto:raevskayakatay1707@gmail.com">raevskayakatay1707@gmail.com</a></p>
             <div id="social">
                 <a href="https://github.com/Kate-Raevskaya"><img src="images/github.svg"></a>
                 <a href="https://www.instagram.com/kate_raevskaya/"><img src="images/instagram.svg"></a>
@@ -112,8 +128,8 @@
             <p>
                 Закончила два онлайн курса в JetBrains Academy - Hyperskill:
             </p>
-                <a href="https://hyperskill.org/certificates/ccdd8be2-5574-4f22-8ea5-6a78ce3188cd.pdf" target="_blank">Introduction to JavaScript</a>
-                <a href="https://hyperskill.org/certificates/dcf381e9-7241-47cc-bebb-3727eb890328.pdf" target="_blank"> Frontend Core</a>
+                <a href="https://hyperskill.org/certificates/ccdd8be2-5574-4f22-8ea5-6a78ce3188cd.pdf" target="_blank">Introduction to JavaScript (эл.сертификат)</a>
+                <a href="https://hyperskill.org/certificates/dcf381e9-7241-47cc-bebb-3727eb890328.pdf" target="_blank"> Frontend Core (эл.сертификат)</a>
             <br>
             <h3>
                 В текущем проекте работаю над реализацией следующих задач:
@@ -127,24 +143,6 @@
                 <li>адаптивная верстка веб-приложения</li>
                 <li>стилизация и дизайн компонентов и приложения</li>
             </ul>
-            <button class="close">Close</button>
-        </div>
-        <div id="about-flashcards" class="window">
-            <h2>Flashcards</h2>
-            <p>You can see the project at the following link:
-                <a href="https://github.com/Kate-Raevskaya/flashcards">flashcards</a>.</p>
-            <p>I did this project when I was studying the fronted on HyperSkill.
-                I created a web page with flip-down flash cards, learned some HTML
-                basics and learned that CSS can easily make a beautiful design.</p>
-            <button class="close">Close</button>
-        </div>
-        <div id="about-virtual-piano" class="window">
-            <h2>Virtual Piano</h2>
-            <p>You can see the project at the following link:
-                <a href="https://github.com/Kate-Raevskaya/virtual-piano">virtual piano</a>.</p>
-            <p>I did this project when I was studying the fronted on HyperSkill.
-                I bound the functionality of a web application to the keys on the keyboard and
-                designed of the web page that looks like real piano using CSS.</p>
             <button class="close">Close</button>
         </div>
     </div>

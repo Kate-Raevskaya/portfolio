@@ -25,9 +25,9 @@ document.querySelector(".overlay").addEventListener("click", () => {
 })
 
 
-for (let project of projects) {
-    addPopUpListener(project);
-}
+// for (let project of projects) {
+//     addPopUpListener(project);
+// }
 
 addPopUpListener(aboutMeButton)
 

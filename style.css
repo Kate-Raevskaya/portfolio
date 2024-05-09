@@ -206,6 +206,10 @@ section {
     padding: 15px 25px 15px 0;
 }
 
+.project-video {
+    padding: 40px 0;
+}
+
 video {
     width: 720px;
     height: auto;
@@ -466,7 +470,7 @@ footer p {
     }
 
     .project-card h3:after {
-        width: 150%;
+        width: 300px;
     }
 
     .project-description, .project-description.right {

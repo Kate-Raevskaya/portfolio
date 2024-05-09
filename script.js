@@ -8,19 +8,23 @@ function addPopUpListener(project) {
     let closeButton = popUpWindow.querySelector("button.close");
     project.addEventListener('click', () => {
         popUpWindow.classList.add('open-pop-up-window');
-        popUpWindow.parentElement.classList.add("open-pop-up-window");
+        popUpWindow.parentElement.classList.add("overlay-visible");
     })
     closeButton.addEventListener("click", () => {
         popUpWindow.classList.remove('open-pop-up-window');
-        popUpWindow.parentElement.classList.remove("open-pop-up-window");
+        popUpWindow.parentElement.classList.remove("overlay-visible");
     })
 }
 
-document.querySelector(".overlay").addEventListener("click", () => {
+document.querySelector(".overlay").addEventListener("click", (event) => {
     let openPopupNodes = document.querySelectorAll(".open-pop-up-window");
     for (let node of openPopupNodes) {
-
+        if (node.getBoundingClientRect().left < event.clientX && event.clientX < node.getBoundingClientRect().right &&
+            node.getBoundingClientRect().top < event.clientY && event.clientY < node.getBoundingClientRect().bottom) {
+            return
+        }
         node.classList.remove("open-pop-up-window")
+        node.parentElement.classList.remove("overlay-visible")
     }
 })
 

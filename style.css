@@ -354,6 +354,10 @@ footer p {
     visibility: visible;
 }
 
+.overlay-visible {
+    visibility: visible;
+}
+
 
 .column-large-2 {
     width: 50%;
@@ -477,6 +481,7 @@ footer p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 20px
     }
 
     .project-card a {
@@ -484,6 +489,10 @@ footer p {
         display: block;
         margin: auto;
         width: fit-content;
+    }
+
+    .project-video {
+        padding: 0;
     }
 
     video {

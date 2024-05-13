@@ -20,14 +20,14 @@ nav {
 nav a {
     padding: 12px 10px;
     text-decoration: none;
-    color: #cbcbcb;
+    color: #faeded;
     font-family: Candara, serif;
     font-weight: lighter;
     font-size: 25px;
 }
 
 nav a:hover {
-    background-color: #cbcbcb;
+    background-color: #faeded;
     color: #341010;
 }
 
@@ -42,7 +42,7 @@ header {
 h1 {
     font-family: Candara, serif;
     font-size: 40px;
-    color: #cbcbcb;
+    color: #faeded;
     position: absolute;
     bottom: 50px;
     left: 10%;
@@ -61,7 +61,7 @@ p {
 
 section {
     scroll-margin-top: 54px;
-    background-color: #cbcbcb;
+    background-color: #faeded;
 }
 
 #about {
@@ -100,16 +100,17 @@ section {
 #description h2 {
     font-size: 40px;
     margin-left: 20px;
+    padding-top: 40px;
 }
 
-#aboutMe {
+#about-me {
     padding-top: 10px;
     width: 80%;
 }
 
-#aboutMe p {
+#about-me p {
     text-indent: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 #skills {
@@ -117,19 +118,47 @@ section {
 }
 
 #all-skills {
-    padding: 20px 0;
     width: 90%;
 }
 
-#more-about-me {
-    display: inline;
+#more-about-me{
+    width: fit-content;
     cursor: pointer;
     background-color: #341010;
-    color: #cbcbcb;
     font-family: Candara, serif;
-    font-size: 20px;
-    padding: 5px 10px;
+    font-size: 25px;
+    margin-top: 30px;
+    padding: 7px 15px;
+    letter-spacing: 1px;
 
+    transition: all .35s;
+    position:relative;
+}
+
+#more-about-me span{
+    position: relative;
+    color: #faeded;
+    z-index: 2;
+    transition: all .35s;
+}
+
+#more-about-me:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #faeded;
+    transition: all .35s;
+}
+
+#more-about-me:hover span{
+    color: #341010;
+}
+
+#more-about-me:hover:after{
+    width: 100%;
 }
 
 #portfolio {
@@ -174,10 +203,11 @@ section {
 
 .project-card h3 {
     align-self: flex-start;
-    color: rgb(95, 131, 197);
+    color: #be3443;
     font-family: Candara, serif;
     padding-left: 150px;
     font-size: 40px;
+    padding-bottom: 10px;
 }
 
 .project-card h3:after {
@@ -189,12 +219,44 @@ section {
 }
 
 .project-card a {
-    color: aliceblue;
-    background-color: rgb(95, 131, 197);
+    display: block;
+    width: fit-content;
+    /*color: #faeded;*/
+    background-color: #be3443;
     text-decoration: none;
     font-family: Candara, serif;
     font-size: 25px;
-    padding: 3px 7px;
+    margin-top: 20px;
+    padding: 6px 10px;
+
+    transition: all .35s;
+    position:relative;
+}
+
+.project-card a span{
+    position: relative;
+    color: #faeded;
+    z-index: 2;
+    transition: all .35s;
+}
+
+.project-card a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #faeded;
+    transition: all .35s;
+}
+
+.project-card a:hover span{
+    color: #be3443;
+}
+
+.project-card a:hover:after{
+    width: 100%;
 }
 
 .project-card p {
@@ -211,8 +273,14 @@ section {
 }
 
 video {
+    cursor: pointer;
     width: 720px;
     height: auto;
+    transition: box-shadow .35s;
+}
+
+video:hover {
+    box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.2);
 }
 
 #contacts {
@@ -224,19 +292,22 @@ video {
 }
 
 #contacts h2 {
-    padding-bottom: 20px;
+    padding: 40px 0 20px 0;
     font-weight: normal;
     font-size: 40px;
-    margin-top: 20px;
 }
 
 #contacts p {
     text-align: center;
 }
 
+#contacts a {
+    color: #be3443;
+}
+
 #social {
     padding-top: 30px;
-    padding-bottom: 300px;
+    padding-bottom: 50px;
     display: flex;
     gap: 30px;
 }
@@ -252,7 +323,7 @@ footer {
 
 footer p {
     text-align: center;
-    color: #cbcbcb;
+    color: #faeded;
     font-family: Candara, serif;
     font-weight: lighter;
     font-size: 25px;
@@ -270,8 +341,8 @@ footer p {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 650px;
-    min-height: 450px;
-    background-color: white;
+    height: 90%;
+    background-color: #faeded;
     border-radius: 6px;
     border: solid 3px #341010;
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
@@ -285,21 +356,29 @@ footer p {
 #about-more-about-me h3 {
     color: rgba(52, 16, 16, 0.84);
     font-family: Candara, serif;
-    padding-left: 40px;
+    padding: 10px 10px 0 40px;
     font-size: 25px;
     font-weight: lighter;
 }
 
+#about-more-about-me h3:after {
+    content: '';
+    width: 400px;
+    height: 1px;
+    background-color: rgba(52, 16, 16, 0.46);
+    display: block;
+}
+
 #about-more-about-me p {
     text-align: left;
-    padding-left: 15px;
+    padding: 5px 10px 0 20px;
     font-size: 20px;
 }
 
 #about-more-about-me a {
     color: #341010;
     font-family: Candara, serif;
-    padding-left: 15px;
+    padding-left: 20px;
     font-size: 20px;
 }
 
@@ -312,24 +391,20 @@ footer p {
 
 #about-more-about-me .close {
     align-self: center;
-    margin-top: 5px;
+    margin: 20px 0 20px 0;
+    padding: 7px 13px 7px 13px;
+    transition: background-color .35s;
 }
 
-#about-more-about-me div {
-    width: 95%;
-    height: 1px;
-    background-color: rgba(52, 16, 16, 0.46);
-    margin-left: 10px;
-}
-
-.window p {
-    text-align: center;
+#about-more-about-me .close:hover {
+    background-color: #faeded;
+    color: #341010;
 }
 
 .window button {
     cursor: pointer;
     background-color: #341010;
-    color: #cbcbcb;
+    color: #faeded;
     font-family: Candara, serif;
     font-weight: lighter;
     font-size: 20px;
@@ -370,13 +445,13 @@ footer p {
     align-self: flex-end;
     font-size: 20px;
     margin: 5px;
-    background-color: #cbcbcb;
+    background-color: #faeded;
     border-radius: 4px;
     border: transparent;
 }
 
 #open-menu:hover {
-    background-color: #b2b2b2;
+    background-color: #faeded;
     cursor: pointer;
 }
 
@@ -390,6 +465,10 @@ footer p {
 
 
 @media (max-width: 600px) {
+
+    #home h1 {
+        left: 5%
+    }
 
     #open-menu {
         display: flex;
@@ -409,11 +488,12 @@ footer p {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        padding-bottom: 20px;
     }
 
     nav a {
         width: 100%;
-        padding: 7px 0;
+        padding: 10px 0;
         font-size: 20px;
         text-align: center;
     }
@@ -501,8 +581,13 @@ footer p {
     }
 
     .window {
+        overflow-y: scroll;
         width: 90%;
-        min-height: 50%;
+        height: 80%;
+    }
+
+    #about-more-about-me h3:after {
+     max-width: 300px;
     }
 
     p {

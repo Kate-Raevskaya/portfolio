@@ -1,5 +1,3 @@
-let projects = document.querySelectorAll('.project-card');
-
 let aboutMeButton = document.getElementById('more-about-me');
 
 function addPopUpListener(project) {

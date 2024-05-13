@@ -379,6 +379,7 @@ footer p {
     color: #341010;
     font-family: Candara, serif;
     padding-left: 20px;
+    padding-right: 10px;
     font-size: 20px;
 }
 
@@ -546,7 +547,11 @@ footer p {
     }
 
     .project-card {
-        padding: 50px 20px 0 20px;
+        padding: 50px 25px 0 25px;
+    }
+
+    .about-project {
+        padding: 15px 0;
     }
 
     .project-card h3 {
@@ -587,7 +592,7 @@ footer p {
     }
 
     #about-more-about-me h3:after {
-     max-width: 300px;
+     max-width: 250px;
     }
 
     p {

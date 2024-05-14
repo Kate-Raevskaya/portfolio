@@ -31,6 +31,58 @@ nav a:hover {
     color: #341010;
 }
 
+#home-menu {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 30px;
+    padding-top: 150px;
+    padding-left: 10%;
+}
+
+#home-menu a {
+    font-family: Candara, serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #faeded;
+    text-decoration: none;
+    padding: 5px 40px 5px 5px;
+
+    z-index: 2;
+    position: relative;
+
+    transition: all 0.3s;
+    transform: scale(1, 1);
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: relative;
+    width: 256px;
+    height: 64px;
+    line-height: 64px;
+}
+
+.menu-btn::before {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    opacity: 0;
+    background: rgba(250, 237, 237, 0.16);
+    transform: scale(0.5, 0.5);
+}
+
+.menu-btn:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
 header {
     background-image: url("images/bg.jpg");
     background-position: center top;
@@ -43,6 +95,7 @@ h1 {
     font-family: Candara, serif;
     font-size: 40px;
     color: #faeded;
+    font-weight: normal;
     position: absolute;
     bottom: 50px;
     left: 10%;
@@ -465,7 +518,7 @@ footer p {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 
     #home h1 {
         left: 5%
@@ -504,6 +557,11 @@ footer p {
         justify-content: flex-end;
         gap: 20px;
         min-height: 0;
+    }
+
+    .menu-btn:hover::before {
+        opacity: 0;
+        transform: scale(0.1, 0.1);
     }
 
     #description {
@@ -597,5 +655,44 @@ footer p {
 
     p {
         font-size: 20px;
+    }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+
+    #open-menu {
+        display: none;
+    }
+
+    .main-menu {
+        display: flex;
+    }
+
+    nav a {
+        padding: 12px 10px;
+        font-size: 25px;
+        width: fit-content;
+    }
+
+    #home-menu {
+        padding-top: 60px;
+        padding-left: 60%;
+        gap: 10px;
+        text-align: right;
+    }
+
+    #my-photo {
+        height: 250px;
+    }
+
+    #my-photo img:first-child {
+        top: 50px;
+        left: 400px;
+        width: 270px;
+    }
+
+    #my-photo img:last-child {
+        position: relative;
+        left: -100px;
+        top: 30px;
     }
 }
